@@ -8,11 +8,11 @@
     <body>
         <div class='container'>
             <h1>Acme Customers <span class='logo'>VIP</span></h1>
-            <form>
+            <form id="form">
                 <h3>Customers Input Form</h3>
                 <div class='form-item'>
                     <label for='customer-name'>Name</label>
-                    <input name='customer-name' type='text' />
+                    <input id="cus-name" name='customer-name' type='text' />
                 </div>
                 <div class='form-item'>
                         <label for='customer-email'>Email</label>
@@ -21,13 +21,13 @@
                     <div class='form-item'>
                             <label for='customer-vip'>IsVIP</label>
                             <input name='customer-vip' type='checkbox' />
-                        </div>
-                        <button disabled>Create</button>
+                    </div>
+                        <button id="create-button" disabled>Create</button>
 
             </form>
         </div>
         <div id="customers">
-            <div id="vips">2 Vips</div>
+            <div id="vips"><span id="number-of-vips">2</span> Vips</div>
             <div id="customers-list">
                 <div class="customer vip">
                     <div class="customer-display-email">moe (moe@gmail.com)</div>
@@ -38,7 +38,7 @@
                     <button class="destroy-button">Destroy</button>
                 </div>
                 <div class="customer">
-                    <div class="customer-display-email">larry (larry@gmail.com)</div>
+                    <div class="customer-display-email">Shep (Shep@gmail.com)</div>
                     <button class="destroy-button">Destroy</button>
                 </div>
             </div>
