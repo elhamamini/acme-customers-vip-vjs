@@ -7,7 +7,7 @@
     </head>
     <body>
         <div class='container'>
-            <h1>Acme Customers <span>VIP</span></h1>
+            <h1>Acme Customers <span class='logo'>VIP</span></h1>
             <form>
                 <h3>Customers Input Form</h3>
                 <div class='form-item'>
@@ -25,6 +25,23 @@
                         <button disabled>Create</button>
 
             </form>
+        </div>
+        <div id="customers">
+            <div id="vips">2 Vips</div>
+            <div id="customers-list">
+                <div class="customer vip">
+                    <div class="customer-display-email">moe (moe@gmail.com)</div>
+                    <button class="destroy-button">Destroy</button>
+                </div>
+                <div class="customer vip">
+                    <div class="customer-display-email">larry (larry@gmail.com)</div>
+                    <button class="destroy-button">Destroy</button>
+                </div>
+                <div class="customer">
+                    <div class="customer-display-email">larry (larry@gmail.com)</div>
+                    <button class="destroy-button">Destroy</button>
+                </div>
+            </div>
         </div>
     <script type='text/javascript' src='./scripts.js'></script>
     </body>
